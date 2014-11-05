@@ -1,0 +1,71 @@
+body {
+  background: #dad7c7;
+  margin: 0;
+  padding: 0;
+  font-family: 'lucida grande';
+  color: #aba99c;
+}
+
+.grid {
+  width: 80%;
+  max-width: 960px;
+  height: 100%;
+  overflow: auto;
+  border: 1px solid red;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+
+/* Mobile first */
+@media (max-width: 760px) {
+  .box {
+    width: 96%;
+    height: 15%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    background: white;
+  }
+}
+/* larger than mobile */
+
+@media (min-width: 760px) {
+  .box {
+    width: calc(96%/3);
+    height: 20%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    background: white;
+  }
+  .box:nth-child(1),
+  .box:nth-child(4),
+  .box:nth-child(7) {
+    margin-left: 1%;
+  }
+}
+
+/* Box colors. anything after 12 boxes goes to white, per line 24*/
+.box:nth-child(1),
+.box:nth-child(7){
+  background: red;
+}
+.box:nth-child(2),
+.box:nth-child(8){
+  background: orange;
+}
+.box:nth-child(3),
+.box:nth-child(9){
+  background: yellow;
+}
+.box:nth-child(4),
+.box:nth-child(10){
+  background: green;
+}
+.box:nth-child(5),
+.box:nth-child(11){
+  background: blue;
+}
+.box:nth-child(6),
+.box:nth-child(12){
+  background: purple;
+}

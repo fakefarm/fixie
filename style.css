@@ -16,7 +16,7 @@ body {
 }
 
 /* Mobile first */
-@media (max-width: 760px) {
+@media (max-width: 460px) {
   .box {
     width: 96%;
     height: 15%;
@@ -27,7 +27,7 @@ body {
 }
 /* larger than mobile */
 
-@media (min-width: 760px) {
+@media (min-width: 460px) {
   .box {
     width: calc(92%/3);
     height: 20%;
